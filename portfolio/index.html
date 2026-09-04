@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeasin Arafat — Product Designer &amp; Design Engineer</title>
+
+<meta name="description" content="Yeasin Arafat — product designer and design engineer based in Dhaka, Bangladesh. UI/UX, brand identity, and design engineering.">
+<meta name="author" content="Yeasin Arafat">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+
+<!-- Open Graph / social preview. TODO: replace og:url with your real domain once deployed. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yeasin Arafat — Product Designer &amp; Design Engineer">
+<meta property="og:description" content="UI/UX, brand identity, and design engineering. Based in Dhaka, Bangladesh.">
+<meta property="og:url" content="https://example.com">
+<meta name="twitter:card" content="summary">
+
+<!-- Inline SVG favicon: a mono prompt glyph. No extra file needed. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23e8e8e8' text-anchor='middle'%3E%26gt;%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  /* Resolve the theme before first paint so there is no flash of the wrong palette.
+     Kept inline and tiny on purpose — this must run before the body renders. */
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersLight ? 'light' : 'dark'));
+    } catch (e) { /* private mode / storage blocked — fall back to the dark default */ }
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ───────────────────────────── top bar ───────────────────────────── -->
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a class="topbar__brand" href="#top">
+      <span class="topbar__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="topbar__path">~/arafat</span>
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#experience">experience</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-pressed="false">
+      <span class="theme-toggle__label">theme</span>
+      <span class="theme-toggle__state" data-theme-state>dark</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ───────────────────────────── hero ───────────────────────────── -->
+  <section class="hero wrap" aria-labelledby="hero-name">
+    <p class="line">
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd" data-typewriter="whoami">whoami</span><span class="caret" aria-hidden="true"></span>
+    </p>
+
+    <h1 class="hero__name" id="hero-name">Yeasin Arafat</h1>
+    <p class="hero__role">product designer <span class="dim">&amp;</span> design engineer</p>
+
+    <dl class="hero__meta">
+      <div><dt>location</dt><dd>Dhaka, Bangladesh</dd></div>
+      <div><dt>timezone</dt><dd>UTC+6</dd></div>
+      <div><dt>focus</dt><dd>UI/UX · brand · front-end</dd></div>
+    </dl>
+
+    <p class="status"><span class="status__dot" aria-hidden="true"></span>available for work</p>
+
+    <div class="hero__actions">
+      <a class="btn btn--solid" href="#work">view work</a>
+      <a class="btn" href="mailto:workmail.arafat@gmail.com">get in touch</a>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── about ───────────────────────────── -->
+  <section class="section wrap" id="about" aria-labelledby="about-h">
+    <p class="line" data-reveal>
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd">cat about.txt</span>
+    </p>
+    <h2 class="section__h" id="about-h">About</h2>
+
+    <div class="about" data-reveal>
+      <div class="about__body">
+        <p>
+          I'm Yeasin — I design brand marks and interfaces, then build them.
+        </p>
+        <p>
+          It started with a sketchbook and a stubborn question: why do some logos feel
+          inevitable while others just sit there? Chasing that took me into identity work —
+          a wordmark for a coffee roaster, a redesign for a medical centre, marks for a law
+          group and a supply company. Small teams, mostly, who needed an identity that could
+          do some work for them.
+        </p>
+        <p>
+          Then I got curious about what happens after the handoff, so I learned to build.
+          Computer technology at IET, a government-certified Level 3 in web design and
+          development, and now a BSc in CSE at BUBT. These days I'm about as comfortable in a
+          code editor as in Illustrator — which mostly means I design things I can actually ship.
+        </p>
+        <p>
+          What I keep coming back to is restraint. Clear type, honest spacing, and nothing on
+          the page that isn't doing a job. If I can delete it and nothing breaks, it goes.
+        </p>
+      </div>
+
+      <figure class="about__portrait">
+        <img src="assets/portrait.jpg"
+             alt="Portrait of Yeasin Arafat" width="320" height="400" loading="lazy" decoding="async">
+        <figcaption>Dhaka, BD</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── work ───────────────────────────── -->
+  <section class="section wrap" id="work" aria-labelledby="work-h">
+    <p class="line" data-reveal>
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd">ls projects/</span>
+    </p>
+    <h2 class="section__h" id="work-h">Selected work</h2>
+
+    <!--
+      Behance rows currently point at the profile root, because Behance gallery
+      URLs need a numeric ID I can't derive. To deep-link one, open the project
+      on Behance and paste its URL (behance.net/gallery/<id>/<slug>) into href.
+      Years are omitted where I didn't know them — add a <span class="project__year">
+      inside .project__meta to show one.
+    -->
+    <ol class="projects" data-reveal>
+      <li class="project">
+        <a class="project__link" href="https://github.com/arafatOne/RPL-ICT-WDDF-L3-00XXXX_BloomingOasis" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">01</span>
+          <span class="project__name">Blooming Oasis</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">front-end</span>
+            <span class="project__year">2026</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          My Level 3 assessment build — a multi-page site written from scratch in HTML, CSS
+          and JavaScript, no framework, submitted for national skills certification.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">02</span>
+          <span class="project__name">RAYA's Coffee</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">brand identity</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          Identity for a coffee roaster — wordmark, packaging direction and a palette warm
+          enough to sit on a shelf without shouting.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">03</span>
+          <span class="project__name">Priority Medical Centre</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">logo redesign</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          A redesign that had to read as calm and competent at any size — including very
+          small, on signage and forms.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">04</span>
+          <span class="project__name">Rosenthal Law Group</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">logo</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          A mark for a law practice: serious, symmetrical, and built to survive being
+          embossed, faxed and printed in one colour.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">05</span>
+          <span class="project__name">R&amp;R Supply</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">logo</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          Monogram-led identity for a supply company — direct, industrial, and legible from
+          across a warehouse.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">06</span>
+          <span class="project__name">Paris Mermaid</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">illustration</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          A digital illustration study in making a single figure carry a whole composition.
+        </p>
+      </li>
+
+      <li class="project">
+        <a class="project__link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="project__id" aria-hidden="true">07</span>
+          <span class="project__name">Sketchbook</span>
+          <span class="project__leader" aria-hidden="true"></span>
+          <span class="project__meta">
+            <span class="project__tag">drawing</span>
+            <span class="project__arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+        <p class="project__desc">
+          Ongoing pencil work. Everything else on this page started here.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ───────────────────────── experience ───────────────────────── -->
+  <section class="section wrap" id="experience" aria-labelledby="exp-h">
+    <p class="line" data-reveal>
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd">cat experience.log</span>
+    </p>
+    <h2 class="section__h" id="exp-h">Experience &amp; education</h2>
+
+    <div class="log" data-reveal>
+      <h3 class="log__group">Employment</h3>
+      <ol class="entries">
+        <li class="entry">
+          <p class="entry__when">Nov 2024 — May 2025</p>
+          <div class="entry__body">
+            <h4 class="entry__what">Data Entry Operator</h4>
+            <p class="entry__where">Golden Harvest InfoTech Limited <span class="dim">·</span> Mirpur 12, Dhaka</p>
+            <p class="entry__note">English and French language division. Processed structured records at volume with an accuracy-first workflow.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="log__group">Education</h3>
+      <ol class="entries">
+        <li class="entry">
+          <p class="entry__when">Jan 2025 — present</p>
+          <div class="entry__body">
+            <h4 class="entry__what">BSc in Computer Science &amp; Engineering</h4>
+            <p class="entry__where">Bangladesh University of Business &amp; Technology (BUBT)</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry__when">2022</p>
+          <div class="entry__body">
+            <h4 class="entry__what">Diploma in Engineering — Computer Technology</h4>
+            <p class="entry__where">Institute of Engineering and Technology (IET) <span class="dim">·</span> BTEB</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry__when">2018</p>
+          <div class="entry__body">
+            <h4 class="entry__what">Secondary School Certificate — Science</h4>
+            <p class="entry__where">Oxbridge International School and College <span class="dim">·</span> Dinajpur Board</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="log__group">Certification</h3>
+      <ol class="entries">
+        <li class="entry">
+          <p class="entry__when">Apr 2026 <span class="dim">· valid to 2031</span></p>
+          <div class="entry__body">
+            <h4 class="entry__what">National Skills Certificate — Web Design &amp; Development for Freelancing, Level 3</h4>
+            <p class="entry__where">
+              National Skills Development Authority (NSDA) <span class="dim">·</span>
+              Prime Minister's Office, Bangladesh
+            </p>
+            <p class="entry__note">
+              Assessed under the Bangladesh National Qualification Framework across ten units
+              of competency — HTML, CSS and frameworks, JavaScript, image editing, client
+              communication and self-directed teamwork.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="log__group">Training</h3>
+      <ol class="entries">
+        <li class="entry">
+          <p class="entry__when">2026 <span class="dim">· 3 days</span></p>
+          <div class="entry__body">
+            <h4 class="entry__what">Web Design &amp; Development for Freelancers (Level 3)</h4>
+            <p class="entry__where">Ideal Institute of Science and Technology <span class="dim">·</span> Mirpur 10, Dhaka</p>
+            <p class="entry__note">HTML5, CSS3 with Bootstrap, JavaScript, Git.</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry__when">2023 <span class="dim">· 3 months</span></p>
+          <div class="entry__body">
+            <h4 class="entry__what">English Language</h4>
+            <p class="entry__where">Technical Training Center, Rangpur</p>
+            <p class="entry__note">Listening, speaking, reading and writing.</p>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="entry__when">2022 <span class="dim">· 3 months</span></p>
+          <div class="entry__body">
+            <h4 class="entry__what">Programming</h4>
+            <p class="entry__where">National Engineering Development Limited <span class="dim">·</span> DUET, Gazipur</p>
+            <p class="entry__note">C++, C# and Python.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!--
+      A "download CV" button used to sit here. It was removed along with the PDF
+      it pointed at, because that file carried personal details that don't belong
+      on a public page. To bring it back, export a trimmed CV (work, education,
+      skills, email only), save it as assets/cv.pdf, and paste this in:
+
+      <p class="cv-line" data-reveal>
+        <a class="btn" href="assets/cv.pdf" download>
+          download CV <span class="dim">·</span> pdf
+        </a>
+      </p>
+    -->
+  </section>
+
+  <!-- ───────────────────────────── skills ───────────────────────────── -->
+  <section class="section wrap" id="skills" aria-labelledby="skills-h">
+    <p class="line" data-reveal>
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd">skills --list</span>
+    </p>
+    <h2 class="section__h" id="skills-h">Skills</h2>
+
+    <div class="skills" data-reveal>
+      <div class="skills__col">
+        <h3 class="skills__h">Design</h3>
+        <ul class="tags">
+          <li>UI &amp; UX design</li>
+          <li>Brand identity</li>
+          <li>Logos &amp; wordmarks</li>
+          <li>Digital illustration</li>
+          <li>Typography</li>
+          <li>Layout &amp; composition</li>
+          <li>Wireframing</li>
+        </ul>
+      </div>
+
+      <div class="skills__col">
+        <h3 class="skills__h">Tools</h3>
+        <ul class="tags">
+          <li>Figma</li>
+          <li>Adobe XD</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+
+      <div class="skills__col">
+        <h3 class="skills__h">Code</h3>
+        <ul class="tags">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Responsive layout</li>
+          <li>Python</li>
+          <li>C++ / C#</li>
+        </ul>
+      </div>
+
+      <div class="skills__col">
+        <h3 class="skills__h">Working</h3>
+        <ul class="tags">
+          <li>Client communication</li>
+          <li>Self-directed teams</li>
+          <li>Microsoft Office</li>
+          <li>English <span class="dim">— fluent</span></li>
+          <li>Bengali <span class="dim">— native</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── contact ───────────────────────────── -->
+  <section class="section wrap" id="contact" aria-labelledby="contact-h">
+    <p class="line" data-reveal>
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <span class="cmd">contact --all</span>
+    </p>
+    <h2 class="section__h" id="contact-h">Get in touch</h2>
+
+    <p class="contact__lead" data-reveal>
+      Open to product design, brand, and design-engineering work — freelance or full time.
+      The fastest way to reach me is email.
+    </p>
+
+    <!--
+      TODO: replace the four placeholder hrefs below with your real profile URLs.
+      Delete any row you don't use. The email row is already live.
+    -->
+    <ul class="links" data-reveal>
+      <li>
+        <a class="link" href="mailto:workmail.arafat@gmail.com">
+          <span class="link__key">email</span>
+          <span class="link__leader" aria-hidden="true"></span>
+          <span class="link__val">workmail.arafat@gmail.com</span>
+        </a>
+        <button class="copy" type="button" data-copy="workmail.arafat@gmail.com" aria-label="Copy email address">copy</button>
+      </li>
+      <li>
+        <a class="link" href="https://www.behance.net/arafat67" target="_blank" rel="noopener noreferrer">
+          <span class="link__key">behance</span>
+          <span class="link__leader" aria-hidden="true"></span>
+          <span class="link__val">behance.net/arafat67</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://github.com/arafatOne" target="_blank" rel="noopener noreferrer">
+          <span class="link__key">github</span>
+          <span class="link__leader" aria-hidden="true"></span>
+          <span class="link__val">github.com/arafatOne</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.linkedin.com/in/arafatzero/" target="_blank" rel="noopener noreferrer">
+          <span class="link__key">linkedin</span>
+          <span class="link__leader" aria-hidden="true"></span>
+          <span class="link__val">linkedin.com/in/arafatzero</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- ───────────────────────────── footer ───────────────────────────── -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__left">
+      <span class="prompt" aria-hidden="true">&gt;</span> exit
+      <span class="caret caret--slow" aria-hidden="true"></span>
+    </p>
+    <p class="footer__right">
+      <span>Yeasin Arafat</span>
+      <span class="dim">·</span>
+      <span>Dhaka <time data-clock>--:--</time></span>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
